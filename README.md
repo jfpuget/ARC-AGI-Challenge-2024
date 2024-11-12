@@ -12,7 +12,7 @@ The structure of the repo is rather simple:
 - /notebooks contains data prep and model training notebooks.
 - /checkpoints contains saved checkpoints.
 
-The code is not decomposed into logical units files but it has some structure in it. First there is dataset creation, then data loader, then model class implementation, then training and inference code. The model can be trained using Pytorch distributed data parallel.
+The code is not decomposed into logical units files but it has some structure in it. First there is dataset creation, then data loader, then model class implementation, then training and inference code. The model can be trained using Pytorch distributed data parallel.  Model implementation is derived from Phil Wang's nGPT-pytorch: https://github.com/lucidrains/nGPT-pytorch
 
 The configuration files contain all options that can be overriden at runtime.
 
