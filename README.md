@@ -38,7 +38,7 @@ The pdf paper in main directory is a short paper describing our solution.
 
 Steps to reproduce my solution:
 - clone Michael Hodel data generator: https://github.com/michaelhodel/re-arc .
-- copy the noebook 'gen1000.ipynb' from the notebook directory and paste it in the re-arc local directlry. Then run the notebook. It should generate a directory gen1000 containing 10k examples per task. Running it took 6 hours on my workstation. That code scould be made parallel, but I did not bother.
+- copy the notebook 'gen1000.ipynb' from the notebook directory and paste it in the re-arc local directlry. Then run the notebook. It should generate a directory gen10000 containing 10k examples per task. Running it took 6 hours on my workstation. That code scould be made parallel, but I did not bother.
 - run the training notebook (or run the torchrun command directly in a terminal) by using the path to the generated data as option `--data_path`. The notebook `train.ipynb` shows the run we used for the competition. This should save a model checkpoint. That checkpoint can then be uploaded to Kaggle as a dataset and be used in our [submission notebook](https://www.kaggle.com/code/cpmpml/arc-prize-1).
 
 
